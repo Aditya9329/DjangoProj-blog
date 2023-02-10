@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}sign up{% endblock title %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'blog/css/signup.css '%}">
+
+<div class="container">
+
+    <h3 class="text-center">
+        Welcome to our blog
+        <small class="text-muted">Please signup if not done yet!</small>
+    </h3>
+    <br>
+
+    <form action="">
+
+
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">First name</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="First name">
+        </div>
+    
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Last name</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Last name">
+        </div>
+    
+    
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email address">
+        </div>
+    
+      
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">password</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Password">
+        </div>
+
+        <br>
+        <input class="btn btn-primary" type="submit" value="Submit">
+    </form>
+
+</div>
+
+{% endblock content %}

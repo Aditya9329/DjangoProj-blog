@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block title %} sign in {% endblock title %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'blog/css/signin.css' %}">
+{% block content %}
+    <div class="container">
+
+        <br>
+        <br>
+
+
+        <p class="h1">Sign in</p>
+        <br>
+        <form action="">
+            
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email address">
+            </div>
+        
+        
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">password</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Password">
+            </div>
+
+            <br>
+            <input class="btn btn-primary" type="submit" value="Submit">
+        </form>
+    </div>
+{% endblock content %}
