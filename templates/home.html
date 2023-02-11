@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}home{% endblock title %}
+{% block content %}
+<div class="container">
+<div class="jumbotron container my-5">
+    <h1 class="display-4">Welcome to ANM blogs</h1>
+    <p class="lead">This is a place where you can find the technical blogs which may help you to learn and explore the technologies.</p>
+    <hr class="my-4">
+    <p>We have added the contact section so if any kind of improvement you
+        want please let us know .
+    </p>
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </div>
+
+
+    <h1>Popular posts</h1>
+    <br>
+    <div class="card container">
+        <!-- <h5 class="card-header">Featured</h5> -->
+        <div class="card-body">
+          <h5 class="card-title">Title</h5>
+          <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga eius, itaque perspiciatis, cumque natus delectus facilis rem voluptatum qui repellendus, dolorem expedita sunt quidem aliquam saepe debitis iure? Nisi debitis beatae nesciunt maiores id, consequuntur sequi voluptate tempora. Facilis, doloremque?</p>
+          <a href="/blog/{{posts.slug}}" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+  </div>
+</div>
+{% endblock content %}
